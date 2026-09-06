@@ -5,8 +5,11 @@ class Solution {
         list.add(new ArrayList<>());
         list.add(new ArrayList<>());
 
-        HashMap<Integer, Integer> map1 = new HashMap<>();
-        HashMap<Integer, Integer> map2 = new HashMap<>();
+        // HashMap<Integer, Integer> map1 = new HashMap<>();
+        // HashMap<Integer, Integer> map2 = new HashMap<>();
+
+          TreeMap<Integer, Integer> map1 = new TreeMap<>();
+        TreeMap<Integer, Integer> map2 = new TreeMap<>();
 
           for(int[] it : matches){
            map1.put(it[0], map1.getOrDefault(it[0], 0) + 1);
@@ -23,8 +26,8 @@ class Solution {
             list.get(1).add(key);
        }}
 
-       Collections.sort(list.get(0));
-       Collections.sort(list.get(1));
+    //    Collections.sort(list.get(0));
+    //    Collections.sort(list.get(1));
 
      return list;  
     }
