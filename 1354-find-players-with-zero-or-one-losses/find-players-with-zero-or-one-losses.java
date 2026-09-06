@@ -16,14 +16,12 @@ class Solution {
        for(int key : map1.keySet()){
        if(!map2.containsKey(key)){
             list.get(0).add(key);
-       }
-       }
+       }}
 
        for(int key : map2.keySet()){
        if(map2.get(key) == 1){
             list.get(1).add(key);
-       }
-       }
+       }}
 
        Collections.sort(list.get(0));
        Collections.sort(list.get(1));
