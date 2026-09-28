@@ -4,25 +4,23 @@ class Solution {
         int i = 0;
         int j = 0;
         int sum = 0;
-        int subCount = 0;
-      
+        double avg = 0;
+        int count = 0;
 
         while(j < n){
-              sum += arr[j];
-
-              if(j-i+1 < k){
+            sum += arr[j];
+            if(j-i+1 < k){
                 j++;
-              }
-              else if(j-i+1 == k){
-                int avg = sum/k;
+            } else{
+                avg = sum/k;
                 if(avg >= threshold){
-                subCount++;
+                     count++;
                 }
                 sum -= arr[i];
                 i++;
                 j++;
-              }
+            }
         }
-        return subCount;
+        return count;
     }
 }
