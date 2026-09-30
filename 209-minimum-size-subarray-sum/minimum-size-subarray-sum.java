@@ -12,7 +12,7 @@ class Solution {
                 j++;
             }
             else if(sum>= target){
-                mini = Math.min(mini, j-i+1);
+                // mini = Math.min(mini, j-i+1);
                 while(sum > target){
                 mini = Math.min(mini, j-i+1);
                     sum -= nums[i];
