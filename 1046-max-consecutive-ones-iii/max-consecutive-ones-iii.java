@@ -13,12 +13,14 @@ class Solution {
                 if(nums[i] == 0) count--;
                 i++;
             }
-            if(count <= k){
+            if(count == k){
                 maxLength = Math.max(maxLength, j-i+1); 
-                 j++;
+                 
             }
+            j++;
 
         }
+        maxLength = Math.max(maxLength, j-i);
         return maxLength;
     }
 }
