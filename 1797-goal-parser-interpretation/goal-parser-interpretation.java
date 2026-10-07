@@ -1,9 +1,9 @@
 class Solution {
     public String interpret(String command) {
-        /* G ( ) ( a l ) */
+       
         char[] arr = command.toCharArray();
         int n = arr.length;
-        StringBuilder sb = new StringBuilder("");
+        StringBuffer sb = new StringBuffer("");
 
         for(int i=0; i<n; i++){
             if(arr[i] == 'G'){
