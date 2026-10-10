@@ -1,7 +1,7 @@
 class Solution {
     public boolean halvesAreAlike(String s) {
         int n = s.length();
-
+       
         int count1 = 0;
         int count2 = 0;
 
@@ -10,7 +10,7 @@ class Solution {
             if(i < n/2 && (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')){
                count1++;
             }
-            else if(i >= n/2 && (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')){
+            else if( (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')){
                 count2++;
             }
         }
