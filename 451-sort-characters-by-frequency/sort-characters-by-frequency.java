@@ -15,7 +15,12 @@ class Solution {
 
         StringBuilder sb = new StringBuilder("");
 
-        Collections.sort(list, (a,b) -> map.get(b)-map.get(a));
+        // Collections.sort(list, (a,b) -> map.get(b)-map.get(a));   /* Lambda Expression */
+        Collections.sort(list, new Comparator<Character>(){
+            public int compare(Character a, Character b){
+                    return map.get(b)-map.get(a);
+            }
+        });
 
         for(char ch : list){
             int val = map.get(ch);
