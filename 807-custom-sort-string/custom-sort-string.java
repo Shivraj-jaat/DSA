@@ -9,7 +9,7 @@ class Solution {
             char ch = s.charAt(i);
             map.put(ch, map.getOrDefault(ch, 0)+1);
         }
-int idx = 0;
+    int idx = 0;
      
             while(idx < m){
                 char ch1 = order.charAt(idx);
@@ -29,7 +29,6 @@ for(char ch : map.keySet()){
     while(map.get(ch) > 0){
         sb.append(ch);
             map.put(ch, map.getOrDefault(ch, 0)-1);
-
     }
     
 }
