@@ -8,7 +8,7 @@ class Solution {
 
         if(nums[mid] == target) return mid;
 
-        if(nums[mid] < target){
+      else if(nums[mid] < target){
             beg = mid + 1;
         }
         else {
